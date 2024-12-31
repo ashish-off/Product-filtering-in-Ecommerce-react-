@@ -49,7 +49,7 @@
 }
 
 .checkmark:after {
-  content: "efe";
+  content: "";
   position: absolute;
   display: none;
 }

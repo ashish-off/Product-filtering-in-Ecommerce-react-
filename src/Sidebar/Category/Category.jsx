@@ -1,39 +1,17 @@
 import React from 'react'
 import "./Category.css"
+import Input from '../../Components/Input'
 
 const Category = () => {
   return (
     <div>
-      <h2 className="sidebar-title">
+        <h2 className="sidebar-title">Category</h2>
         <div>
-
-          <label className="sidebar-label-container">
-            <input type="radio" name='test' />
-            <span className='checkmark'></span>All
-          </label>
-
-          <label className="sidebar-label-container">
-            <input type="radio" name='test' />
-            <span className='checkmark'></span>Sneakers
-          </label>
-
-          <label className="sidebar-label-container">
-            <input type="radio" name='test' />Flats
-            <span className='checkmark'></span>
-          </label>
-
-          <label className="sidebar-label-container">
-            <input type="radio" name='test' />
-            <span className='checkmark'></span>Sandles
-          </label>
-
-          <label className="sidebar-label-container">
-            <input type="radio" name='test' />
-            <span className='checkmark'></span>Heels
-          </label>
-
+          <Input />
+          <Input />
+          <Input />
+          <Input />
         </div>
-      </h2>
     </div>
   )
 }
