@@ -78,7 +78,7 @@ const App = () => {
     // price filter
     if (price) {
       filteredProducts = filteredProducts.filter(
-        (product) => product.newPrice <= price
+        (product) => parseInt(product.newPrice) <= price
       );
     }
 
