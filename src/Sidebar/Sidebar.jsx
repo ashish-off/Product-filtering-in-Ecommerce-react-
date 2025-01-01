@@ -4,7 +4,8 @@ import { IoCartOutline } from "react-icons/io5";
 import Category from "./Category/Category";
 import Price from "./Price/Price"
 import Colors from "./Colors/Colors"
-const Sidebar = ({handleChange}) => {
+
+const Sidebar = ({handleCategoryChange, handleColorChange, handlePriceChange}) => {
   
   return (
     <>
@@ -13,9 +14,9 @@ const Sidebar = ({handleChange}) => {
         <h1><IoCartOutline /></h1>
       </div>
 
-      <Category handleChange = {handleChange} />    
-      <Price handleChange = {handleChange} />
-      <Colors handleChange = {handleChange} />
+      <Category handleChange={handleCategoryChange} />    
+      <Price handleChange={handlePriceChange} />
+      <Colors handleChange={handleColorChange} />
     </section>
     </>
   )
